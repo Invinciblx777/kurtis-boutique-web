@@ -10,6 +10,8 @@ import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { useParams } from "next/navigation";
 
+export const runtime = "edge";
+
 export default function OrderDetailsPage() {
     // 1. Get Params & Store Data
     const params = useParams();
