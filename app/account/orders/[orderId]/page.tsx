@@ -12,6 +12,8 @@ import { formatPrice } from "@/lib/utils";
 import { getStatusDescription } from "@/lib/tracking";
 import { useEffect, useState } from "react";
 
+export const runtime = "edge";
+
 export default function UserOrderDetailsPage() {
     const params = useParams();
     const orderId = params.orderId as string;
