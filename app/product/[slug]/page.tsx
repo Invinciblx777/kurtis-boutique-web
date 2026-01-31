@@ -13,6 +13,8 @@ import { toast } from "sonner";
 import { useStore, useProductStore } from "@/lib/store";
 import { CustomisationForm } from "@/components/product/CustomisationForm";
 
+export const runtime = "edge";
+
 export default function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = use(params);
     const { products } = useProductStore();
